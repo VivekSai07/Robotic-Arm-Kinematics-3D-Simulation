@@ -55,11 +55,8 @@ for i = 1:200
     h3 = plot3([0 0],[0 0],get(gca,'xlim'),'y--');
     set([h1,h2,h3],'color',[1 1 1]*.3);
     rotate3d on
-    %
-    %     Link1 = line([0,Ax1],[0,Ay1])
-    %     Link2 = line([Ax1,Bx2],[Ay1,By2])
-    %     axis([-3 3 -3 3]);
-    %     title('~Forward Kinematics~');
+    
+    title('~Forward Kinematics~');
     str1 = text(Bx2,By2,txtend,'FontSize',8,'HorizontalAlignment','left','VerticalAlignment','bottom');
     xlabel('~X-axis~');
     ylabel('~Y-axis~');
