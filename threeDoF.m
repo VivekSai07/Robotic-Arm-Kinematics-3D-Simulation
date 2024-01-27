@@ -54,10 +54,7 @@ for i = 1:500
     L2 = plot3([x1,x2],[y1,y2],[z1,z2],'r','linew',3);
     hold on
     L3 = plot3([x2,x3],[y2,y3],[z2,z3],'b','linew',3);
-%     set([Link1 Link2 Link3],
-%     plot3(Link1,Link2,Link3);
-    %plot3(Link2,Link3);
-%     axis([-10 10 -10 10]);
+
     txtend = ['x3 = ', num2str(x3),' , ','y3 = ', num2str(y3),' , ','z3 = ', num2str(z3)];
     str1 = text(x3,y3,z3,txtend,'FontSize',8,'HorizontalAlignment','left','VerticalAlignment','bottom');
     title('~Forward Kinematics~');
